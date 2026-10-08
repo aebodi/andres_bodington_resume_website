@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Coursework — Andres Bodington</title>
+	<meta name="description" content="Software Engineering assignment index. Live builds on Azure." />
+	<meta name="robots" content="noindex, nofollow" />
+	<meta name="theme-color" content="#05070a" />
+
+	<link rel="icon" href="data:image/svg+xml,
+		%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E
+		%3Crect width='32' height='32' rx='7' fill='%2305070a'/%3E
+		%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%2300e0ff'
+		text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+	<link rel="preload" as="font" type="font/woff" crossorigin
+		href="assets/fonts/instrument-serif-400.woff" />
+	<link rel="preload" as="font" type="font/woff" crossorigin
+		href="assets/fonts/instrument-sans-400.woff" />
+
+	<link rel="stylesheet" href="styles.css?v=20260920h" />
+</head>
+
+<body class="page-plain">
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<div class="bg-field" aria-hidden="true">
+		<div class="bg-glow"></div>
+		<div class="bg-grid"></div>
+		<div class="bg-grain"></div>
+	</div>
+
+	<div class="cursor" data-cursor-root aria-hidden="true">
+		<span class="cursor-ring"></span>
+		<span class="cursor-dot"></span>
+	</div>
+
+	<header class="nav is-scrolled" data-nav>
+		<div class="nav-inner">
+			<a class="nav-mark" href="index.html">
+				<span class="nav-mark-badge">AB</span>
+				<span class="nav-mark-name">Andres Bodington</span>
+			</a>
+			<a class="btn btn-sm" href="index.html">← Portfolio</a>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="section page-head">
+			<div class="container">
+				<p class="eyebrow" data-reveal><span class="eyebrow-dot"></span>Coursework</p>
+				<h1 class="page-title" data-reveal>Software Engineering</h1>
+				<p class="page-meta" data-reveal data-course>
+					CPSC-44000-001 · Software Engineering · Fall 2026
+				</p>
+				<p class="page-sub" data-reveal data-course-note>
+					Live builds are hosted on Azure. Source is on GitHub.
+				</p>
+			</div>
+		</section>
+
+		<section class="section cw-section">
+			<div class="container">
+				<ol class="cw-list" data-coursework>
+					<!--
+						Entries render here from lib/coursework.js. The mount only fills this
+						list when it is empty, so anything hardcoded below is left untouched.
+					-->
+				</ol>
+
+				<div class="cw-empty card" data-cw-empty data-todo>
+					<p class="slot-tag">No assignments yet</p>
+					<p>
+						Add each one to <code>lib/coursework.js</code> — a label, a title, a short
+						summary, and the Azure and GitHub links. They appear here automatically,
+						newest first.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<p>© <span data-year>2026</span> Andres Bodington</p>
+			<p class="footer-note">Coursework index — not part of the portfolio</p>
+			<a class="footer-top" href="index.html">Back to portfolio →</a>
+		</div>
+	</footer>
+
+	<script defer src="lib/coursework.js?v=20260920h"></script>
+	<script defer src="main.js?v=20260920h"></script>
+</body>
+</html>
